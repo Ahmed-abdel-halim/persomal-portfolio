@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <title>My Skills</title>
+    <style>
+      :root {
+        --orange: rgb(16, 44, 63);
+        --violet: #2fe0f4;
+      }
+
+      * {
+        font-family: "Roboto", sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      *::selection {
+        background: var(--orange);
+        color: #fff;
+      }
+
+      html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+      }
+
+      .heading {
+        font-size: 4rem;
+        color: var(--orange);
+        text-align: center;
+        padding: 0 1rem;
+        padding-top: 6rem;
+        letter-spacing: 0.2rem;
+        font-weight: 900;
+        margin: 5rem 0;
+
+        -webkit-text-stroke: #666 0.1rem;
+
+      }
+      @keyframes hideImage {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+}
+      .course .box-container {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 4rem;
+        flex-wrap: wrap;
+      }
+      .course .box-container img {
+        z-index: 100;
+        position:absolute;
+        margin-top: -30px;
+        animation: hideImage 5s forwards;
+width: 1350px;
+height: 270px;
+      }
+
+      .course .box-container .box {
+        height: 18rem;
+        width: 25rem;
+        margin: 3.5rem 2rem;
+        z-index: 1;
+        text-align: center;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 0 0.1rem var(--violet),
+          0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+      }
+      .course .box-container .box:hover {
+        transform: scale(1.2);
+      }
+
+
+      .course .box-container .box i {
+        height: 10rem;
+        width: 10rem;
+        line-height: 8rem;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+        background: var(--orange);
+        margin-top: -4rem;
+        border: 1rem solid #fff;
+        border-left: 1rem solid var(--orange);
+        border-right: 1rem solid var(--orange);
+        box-shadow: 0 0 0 1rem #fff inset;
+        font-size: 3.5rem;
+      }
+
+      .course .box-container .box h3 {
+        font-size: 2rem;
+        color: var(--violet);
+      }
+
+      .course .box-container .box p {
+        font-size: 1.5rem;
+        color: var(--orange);
+
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="course" class="course">
+      <h1 class="heading">My Skills</h1>
+      <div class="box-container">
+
+        <div class="box">
+          <i class="fab fa-html5"></i>
+          <h3>html5</h3>
+          <p>uses markup tags to describe web pages.</p>
+        </div>
+
+        <div class="box">
+          <i class="fab fa-css3-alt"></i>
+          <h3>css3</h3>
+          <p>used to style and design web pages.</p>
+        </div>
+
+        <div class="box">
+          <i class="fab fa-js-square"></i>
+          <h3>javascript</h3>
+          <p>dynamic programming language used primarily for web development</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <h3>web development</h3>
+          <p>Full Stack PHP Web Developer</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

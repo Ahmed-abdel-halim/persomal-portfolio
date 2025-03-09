@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Message</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: white;
+        padding: 50px;
+      }
+
+      .container {
+        position: relative;
+        width: 350px;
+        margin: auto;
+        margin-top: 7rem;
+        
+      }
+
+      .image-container {
+        animation: hideAfter5s 0s 3s forwards;
+      }
+
+      @keyframes hideAfter5s {
+        100% {
+          visibility: hidden;
+          position: absolute;
+        }
+      }
+
+      .image-container img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #2fe0f4; 
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      .message-form {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        animation: showAfter5s 0s 3s forwards;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        width: 500px;
+        margin-left: -40px;
+
+      }
+
+      @keyframes showAfter5s {
+        100% {
+          visibility: visible;
+          position: relative;
+        }
+      }
+
+      textarea {
+        width: 480px;
+        height: 150px; 
+        padding: 10px;
+        border-radius: 8px;
+        border: 0.1rem solid #2fe0f4;
+        font-size: 16px;
+      }
+
+      button {
+
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        background: #333;
+        border: 0.2rem solid #2fe0f4;
+        color: #2fe0f4;
+      }
+
+      button:hover {
+        border: 0.2rem solid rgb(16, 44, 63);
+
+        background: #2fe0f4;
+        color:rgb(16, 44, 63);
+        border-radius: 5px;
+      }
+
+      .thank-you {
+        display: none;
+        margin-top: 6rem;
+      }
+
+      #thank-you:target {
+        display: block;
+      }
+
+      #thank-you:target + .container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="thank-you" class="thank-you">
+      <h2>Thank You</h2>
+      <img src="./images/think.jpeg" alt="">
+    </div>
+
+    <div class="container">
+      <div class="image-container">
+        <img src="./images/ahmed6.jpg" alt="Happy Birthday" />
+        <p class="name">It's my birthday</p>
+      </div>
+
+      <div class="message-form">
+        <form action="#thank-you">
+          <textarea placeholder="Write your kind message..." required></textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

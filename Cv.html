@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <title>My CV</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+
+      :root {
+        --orange: rgb(16, 44, 63);
+        --violet: #2fe0f4;
+      }
+      :root {
+        --pink: #0a7900;
+      }
+
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        font-weight: normal;
+        text-transform: capitalize;
+      }
+      .heading {
+        text-align: center;
+        padding: 1rem;
+        color:rgb(16, 44, 63);
+        font-size: 4rem;
+        text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        -webkit-text-stroke: #666 0.1rem;
+
+      }
+
+      *::selection {
+        background: var(--pink);
+        color: #fff;
+      }
+
+      html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+      }
+
+      section {
+        min-height: 100vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+        padding-bottom: 3rem;
+      }
+      .education .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .education .row .column {
+        flex: 1 1 40rem;
+        margin: 1rem;
+        padding: 2rem;
+        border: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.8rem 1rem rgba(47, 235, 177, 0.1);
+        border-radius: 0.5rem;
+      }
+      .education .row .column:hover{
+      transform: scale(1.02);
+      }
+
+      .education .row .column .title {
+        color: var(--orange);
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+      }
+
+      .education .row .column .box {
+        padding-left: 2.5rem;
+        padding-bottom: 2rem;
+        border-left: 0.2rem solid var(--violet);
+        position: relative;
+      }
+
+      .education .row .column .box::before {
+        content: "";
+        position: absolute;
+        top: 0.1rem;
+        left: -1.1rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background: var(--violet);
+      }
+
+      .education .row .column .box .year {
+        font-size: 1.5rem;
+        color: #333;
+        padding-bottom: 0.5rem;
+      }
+
+      .education .row .column .box .year i {
+        padding-right: 0.5rem;
+      }
+
+      .education .row .column .box h3 {
+        color: #333;
+        font-size: 2rem;
+      }
+
+      .education .row .column .box p {
+        color: #666;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="education" id="education">
+      <h1 class="heading">My Cv</h1>
+
+      <div class="row">
+        <div class="column">
+          <h3 class="title">My Information</h3>
+
+          <div class="box">
+            <div class="year"><i class="fas fa-user"></i>My Name</div>
+            <h3>Ahmed Abdel Halim Ahmed</h3>
+            <p></p>
+          </div>
+          <div class="box">
+            <div class="year">
+              <i class="fas fa-envelope"></i>Email : ahmedholim42@gmail.com
+            </div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="box">
+            <div class="year">
+              <i class="fas fa-phone"></i>Phone : 01114751979
+            </div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="box">
+            <div class="year">
+              <i class="fas fa-comment"></i>Conclusion
+            </div>
+            <h3></h3>
+            <p>
+              I am always motivated and ready to learn what is new in technology world
+            </p>
+          </div>
+          <div class="box">
+            <div class="year">
+              <i class=" fas fa-arrow-right"></i>Soft skills
+            </div>
+            <h3></h3>
+            <p>
+              Communicaton, Attenton to Detail, Time Management , Collaboraton , Critcal Thinking , Self-
+              Motvaton            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <h3 class="title">my experience</h3>
+
+          <div class="box">
+            <div class="year"><i class="fas fa-calendar"></i> 2019-2023</div>
+            <h3>Master Degree - Halwan University</h3>
+            <p>
+              Faculty of Computer Science and Artificial Intelligence Helwan
+              University Bachelor of Information Systems and Computer Science
+              GPA: 3.00
+            </p>
+          </div>
+          <div class="box">
+            <div class="year"><i class="fas fa-calendar"></i> 2022 - 2023</div>
+            <h3>Real-Estate-System (Graduation Project )</h3>
+            <p>
+              This project helps the user to buy, rent and sell properties ,
+              searching for the properties ,PayPal integration ,mail trap
+              integration for verifying accounts , it’s made by Laravel + MySQL.
+            </p>
+          </div>
+          <div class="box">
+            <div class="year">
+              <i class="fas fa-calendar"></i>Technical skills
+              <h4></h4>
+            </div>
+            <p>
+              Programming Languages and skills: C, Java, Python, PHP, SQL , OOP
+              Frameworks and Tools: Laravel, MVC, Web Development: HTML5, CSS,
+              JavaScript Version control: Git,Github
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
